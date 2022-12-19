@@ -18,10 +18,10 @@ function Scanner() {
 
 	useEffect(() => {
 		document.getElementById("myTextField1").focus();
-		document.getElementById("myTextField2").addEventListener("keyup", debounce(helloWorld2, 200));
+		document.getElementById("myTextField2").addEventListener("keydown", debounce(helloWorld2, 200));
 		const myInput = document.getElementById("myTextField1");
 
-		myInput.addEventListener("keyup", debounce(helloWorld, 200));
+		myInput.addEventListener("keydown", debounce(helloWorld, 200));
 	}, []);
 
 	const [data, setData] = useState("");
