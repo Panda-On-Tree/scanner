@@ -1,4 +1,4 @@
-
+import './Scanner.css'
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
@@ -82,8 +82,9 @@ function Scanner() {
 			{[...Array(1)].map((_, i) => {
 				return (
 					<div key={i} className="app-inner">
-						<p>1</p>
-						<input
+						{/* <p>1</p> */}
+						<div className="scan-input-main">
+                        <input
 							value={data}
 							className="scan-input"
 							id={`myTextField${i + 1}`}
@@ -101,7 +102,9 @@ function Scanner() {
 								setData2(e.target.value);
 							}}
 						/>
-						<button
+                        </div>
+						<div className="scan-input-send-button-main">
+                        <button 
 							onClick={() => {
 								sendData();
 							}}
@@ -115,6 +118,7 @@ function Scanner() {
 							className="scan-input-reset-button">
 							Reset
 						</button>
+                        </div>
 					</div>
 				);
 			})}

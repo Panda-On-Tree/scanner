@@ -2,50 +2,11 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+
 }
 
 .app{
   min-height: 100vh;
   min-width: 100%;
-}
-
-.app-inner{
-  padding: 2% 3%;
-  display: flex;
-  align-items: center;
-  gap: 25px;
-}
-
-.app-inner > p{
-  font-size: 16px;
-  font-weight: 700;
-  padding: 1% 1.5%;
-  border-radius: 10px;
-  background-color: rgb(218, 218, 218);
-}
-
-.scan-input{
-  padding: 10px;
-  font-size: 16px;
-  pointer-events: none;
-}
-.scan-input-send-button{
-  padding: 1%;
-  min-width: 150px;
-  border: none;
-  background-color: #0284c7;
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-}
-.scan-input-reset-button{
-  padding: 1%;
-  min-width: 150px;
-  border: none;
-  background-color: #646464;
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
 }
